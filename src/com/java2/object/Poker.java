@@ -1,14 +1,12 @@
 package com.java2.object;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
-public class Poker2 {
+public class Poker {
 	Random random = new Random();
-//	int[] cards = new int[52];
+	int[] cards = new int[52];
 	String flowers = "SHDC";
-	public Poker2() {
+	public Poker() {
 		for (int i = 0; i < cards.length; i++) {
 			cards[i] = i;
 			System.out.println((i % 13) + 1 + "" + (flowers.charAt(i / 13)));
@@ -34,4 +32,5 @@ public class Poker2 {
 			}
 		}
 	}
+
 }
