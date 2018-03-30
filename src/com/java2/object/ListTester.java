@@ -6,11 +6,20 @@ import java.util.List;
 public class ListTester {
 
 	public static void main(String[] args) {
-		List<Integer> cards = new ArrayList<>();
+		
+		System.out.println("連加ArrayList:");
 		List<Integer> cs = new ArrayList<>();
-//		int n[] = {4, 5, 6, 3, 2, 1};
-//		cs.add
-		System.out.println(cs.size());
+		int a=0;
+		while(a<4) {
+		a++;
+		cs.add(a);
+		}
+		System.out.println("cs.get(0)到cs.get(3)");
+		System.out.println("1~4 共"+cs.size()+"項");
+		System.out.println();
+		
+		System.out.println("size/get/remove/set:");
+		List<Integer> cards = new ArrayList<>();
 		cards.add(87);
 		cards.add(123);
 		cards.add(22);
